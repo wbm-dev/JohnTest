@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Sentence Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <p>I have to 
+      <select id="word1" onchange="updateSentence()">
+        <option value="">Select</option>
+        <option value="uncock">uncock</option>
+        <option value="cock">cock</option>
+      </select> 
+      <select id="word2" onchange="updateSentence()">
+        <option value="">Select</option>
+        <option value="your">your</option>
+        <option value="their">their</option>
+      </select>
+      shit
+    </p>
+    <button onclick="generateMessage()">Submit</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
